@@ -16,12 +16,14 @@ cache:
 script:
 - yarn install
 - yarn test:ci
-after_success:
+before_deploy:
 - yarn build:ci
 deploy:
   provider: pages
   skip-cleanup: true
-  local_dir: ./dist/Portfolio
+  local_dir: $DIST_DIR
+  repo: $REPO
+  target-branch: master
   github-token: $GITHUB_API_KEY
   keep-history: true
   on:
