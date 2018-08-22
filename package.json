@@ -5,7 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:ci": "yarn build --prod --base-href=$DEPLOYMENT_BASE_URL",
     "test": "ng test",
+    "test:ci": "yarn test --watch=false --browsers=ChromeHeadless",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
