@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/**
+ * FONTS
+**/
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Shadows+Into+Light|Special+Elite');
+
+/**
+ * BRAND COLORS
+**/
+// Examples
+$purple: #8A4D76;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+// Mine
+$blue-turquoise: #53B0AE;
+$blanc-de-blanc: #E9EAE8;
+$blackened-pearl: #4D4B50;
+
+/**
+ * OVERRIDE BULMA GLOBAL VARS
+**/
+$family-sans-serif: "Roboto", sans-serif;
+$grey-dark: $blackened-pearl;
+$grey-light: $blanc-de-blanc;
+$primary: $blue-turquoise;
+$link: $pink;
+$widescreen-enabled: false;
+$fullhd-enabled: true;
+
+/**
+ * OVERRIDE BULMA COMPONENT VARS
+**/
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+// Import only what you need from Bulma
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../node_modules/bulma/sass/base/_all.sass";
+@import "../../node_modules/bulma/sass/elements/button.sass";
+@import "../../node_modules/bulma/sass/elements/container.sass";
+@import "../../node_modules/bulma/sass/elements/form.sass";
+@import "../../node_modules/bulma/sass/elements/title.sass";
+@import "../../node_modules/bulma/sass/layout/hero.sass";
+@import "../../node_modules/bulma/sass/layout/section.sass";
+
+/**
+ * CUSTOM VARS
+**/
+@import 'variables';
