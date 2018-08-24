@@ -1,0 +1,20 @@
+<nav class="navbar is-dark" *ngIf="showHeader">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <img src="https://via.placeholder.com/112x28" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+    </a>
+    <div class="navbar-burger burger" [ngClass]="{'is-active': menuExpanded}" data-target="navbarMenu" (click)="onClickMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="navbarMenu" class="navbar-menu" [ngClass]="{'is-active': menuExpanded}">
+    <div class="navbar-start">
+      <ng-container *ngFor="let item of navbarItems">
+        <a [routerLink]="item.path" class="navbar-item has-text-white" [ngClass]="{'is-active': item.active}">{{ item.title }}</a>
+      </ng-container>
+    </div>
+  </div>
+</nav>

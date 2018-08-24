@@ -12,6 +12,7 @@ import { AboutModule } from './about/about.module';
 import { ProjectsModule } from './projects/projects.module';
 import { ContactModule } from './contact/contact.module';
 import { RouterModule } from '@angular/router';
+import { LayoutModule } from './layout/layout.module';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { RouterModule } from '@angular/router';
     RouterModule,
     AppRoutingModule,
     FontAwesomeModule,
+    LayoutModule,
     HomeModule,
     AboutModule,
     ProjectsModule,

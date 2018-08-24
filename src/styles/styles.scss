@@ -8,16 +8,7 @@
 /**
  * BRAND COLORS
 **/
-// Examples
-$purple: #8A4D76;
-$pink: #FA7C91;
-$brown: #757763;
-$beige-light: #D0D1CD;
-$beige-lighter: #EFF0EB;
-// Mine
-$blue-turquoise: #53B0AE;
-$blanc-de-blanc: #E9EAE8;
-$blackened-pearl: #4D4B50;
+@import 'colors';
 
 /**
  * OVERRIDE BULMA GLOBAL VARS
@@ -26,8 +17,8 @@ $family-sans-serif: "Roboto", sans-serif;
 $grey-dark: $blackened-pearl;
 $grey-light: $blanc-de-blanc;
 $primary: $blue-turquoise;
-$link: $pink;
-$widescreen-enabled: false;
+$link: $link-green; // FIXME: Add Custom Color
+$widescreen-enabled: true;
 $fullhd-enabled: true;
 
 /**

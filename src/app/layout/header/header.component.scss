@@ -1,0 +1,13 @@
+@import '_colors';
+
+.navbar-menu {
+  background-color: lighten($blackened-pearl, 10%);
+}
+
+a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.is-active {
+  background-color: lighten($blackened-pearl, 13%);
+}
+
+a.navbar-item.is-active, .navbar-link.is-active {
+  background-color: lighten($blackened-pearl, 15%);
+}
