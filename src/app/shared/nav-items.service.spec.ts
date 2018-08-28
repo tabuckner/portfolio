@@ -6,7 +6,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 describe('NavItemsService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule]
+      imports: [RouterTestingModule],
       providers: [NavItemsService]
     });
   });
