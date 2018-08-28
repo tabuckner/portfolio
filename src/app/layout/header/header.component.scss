@@ -11,3 +11,8 @@ a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.i
 a.navbar-item.is-active, .navbar-link.is-active {
   background-color: lighten($blackened-pearl, 15%);
 }
+
+img.logo {
+  height: 100%;
+  width: auto;
+}
