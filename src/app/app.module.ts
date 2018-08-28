@@ -13,6 +13,7 @@ import { ProjectsModule } from './projects/projects.module';
 import { ContactModule } from './contact/contact.module';
 import { RouterModule } from '@angular/router';
 import { LayoutModule } from './layout/layout.module';
+import { NavItemsService } from './shared/nav-items.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { LayoutModule } from './layout/layout.module';
     ProjectsModule,
     ContactModule,
   ],
-  providers: [],
+  providers: [NavItemsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
