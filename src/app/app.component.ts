@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { faCoffee, faCheck } from '@fortawesome/free-solid-svg-icons';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+import { Subscription } from 'rxjs';
 
 
 @Component({
@@ -7,8 +8,30 @@ import { faCoffee, faCheck } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit, OnDestroy {
   title = 'app';
-  faCoffee = faCoffee;
-  faCheck = faCheck;
+  showHeaderFooter = false;
+  subs: Subscription = new Subscription();
+
+  constructor(private router: Router) { }
+
+  ngOnInit() {
+    this.subs.add(
+      this.router.events.subscribe((event) => {
+        if (event instanceof NavigationEnd) {
+          this.setShowHeaderFooter(event);
+        }
+      })
+    );
+  }
+
+  setShowHeaderFooter(event: NavigationEnd) {
+    const onHomeRoute = event.urlAfterRedirects === '/';
+    onHomeRoute ? this.showHeaderFooter = false : this.showHeaderFooter = true;
+  }
+
+  ngOnDestroy() {
+    this.subs.unsubscribe();
+  }
+
 }
