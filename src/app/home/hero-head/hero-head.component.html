@@ -11,7 +11,7 @@
           <span></span>
         </span>
       </div>
-          <div id="navbarMenuHeroC" class="navbar-menu" [ngClass]="{'is-active': menuExpanded}">
+          <div id="navbarMenuHeroC" class="navbar-menu is-hidden-fullhd" [ngClass]="{'is-active': menuExpanded}">
             <div class="navbar-end">
               <ng-container *ngFor="let item of navbarItems">
                 <a [routerLink]="item.path" class="navbar-item has-text-white" [ngClass]="{'is-active': item.path === '/'}">{{ item.title }}</a>
