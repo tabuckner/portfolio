@@ -31,6 +31,6 @@ import { NavItemsService } from './shared/nav-items.service';
     ContactModule,
   ],
   providers: [NavItemsService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

@@ -1,0 +1,45 @@
+<div class="card has-background-primary">
+  <div class="card-header">
+    <div class="card-header-title is-centered has-text-white">Send Me a Message</div>
+  </div>
+  <div class="card-content">
+    <form action="https://formspree.io/taylorabuckner+portfolio@gmail.com" method="POST">
+      <!-- NAME -->
+      <div class="field">
+        <p class="control has-icons-left">
+          <input name="name" class="input" type="text" placeholder="Name">
+          <span class="icon is-small is-left">
+            <fa-icon [icon]="faUser"></fa-icon>
+          </span>
+        </p>
+      </div>
+      <!-- EMAIL -->
+      <div class="field">
+        <p class="control has-icons-left has-icons-right">
+          <input name="_replyto" class="input" type="email" placeholder="Email">
+          <span class="icon is-small is-left">
+            <fa-icon [icon]="faEnvelope"></fa-icon>
+          </span>
+        </p>
+      </div>
+      <!-- MESSAGE -->
+      <div class="field">
+        <div class="control">
+          <textarea name="message" class="textarea" placeholder="Message" rows="10"></textarea>
+        </div>
+      </div>
+      <!-- SUBMIT -->
+      <div class="form-action-row">
+        <button type="submit" class="button is-rounded is-success">
+          <div class="span icon is-small">
+            <fa-icon [icon]="faPaperPlane"></fa-icon>
+          </div>
+          <span>Send</span>
+        </button>
+      </div>
+      <input type="hidden" name="_subject" value="New submission!" />
+      <!-- DYNAMICALLY SET THIS -->
+      <input type="hidden" name="_next" value="https://tabuckner.github.io/contact" />
+    </form>
+  </div>
+</div>
