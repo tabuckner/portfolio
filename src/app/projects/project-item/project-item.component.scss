@@ -1,0 +1,14 @@
+.project-item {
+  &__summary {
+    margin-bottom: 1.5rem;
+  }
+
+  &__stack {
+    display: flex;
+    flex-wrap: wrap;
+
+    .tag {
+      margin-right: .5rem;
+    }
+  }
+}
