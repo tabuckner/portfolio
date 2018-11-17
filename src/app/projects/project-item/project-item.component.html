@@ -5,16 +5,10 @@
     </figure>
   </div>
   <div class="project-item__content card-content">
-    <div class="project-item__title title is-4">Project Title</div>
-    <p class="project-item__summary">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex modi,
-      aut fugit itaque quisquam autem dicta eius recusandae dolores quod cupiditate, quae impedit odit placeat fuga
-      esse nobis asperiores labore.
-    </p>
+    <div class="project-item__title title is-4">{{ project.name }}</div>
+    <p class="project-item__summary">{{ project.description }}</p>
     <div class="project-item__stack">
-      <div class="tag has-background-grey has-text-white">Technology 1</div>
-      <div class="tag has-background-grey has-text-white">Technology 2</div>
-      <div class="tag has-background-grey has-text-white">Technology 3</div>
+      <div class="tag has-background-grey has-text-white" *ngFor="let tech of project.stack">{{ tech }}</div>
     </div>
   </div>
   <div class="project-item__lints card-footer">
