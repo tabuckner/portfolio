@@ -1,0 +1,14 @@
+.about-bio {
+
+  &__body {
+    max-width: 650px;
+    margin: auto;
+    padding: 2rem 2rem 0;
+  }
+
+  &__belief {
+    .hero-body {
+      padding-top: 0;
+    }
+  }
+}
