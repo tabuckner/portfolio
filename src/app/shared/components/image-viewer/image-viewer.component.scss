@@ -1,0 +1,80 @@
+@mixin close-hover {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.image-viewer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  padding: 100px;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+
+  &__controls {
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+
+      &:hover {
+        @include close-hover;
+      }
+
+      &:focus {
+        @include close-hover;
+      }
+    }
+  }
+
+  &__image {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    animation: zoom .2s;
+  }
+
+  &__caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation: zoom .2s;
+  }
+
+  @media screen and (max-width: 700px) {
+    padding: 16px;
+
+    &__image {
+      width: 100%;
+    }
+  }
+}
+
+// ANIMATION
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}

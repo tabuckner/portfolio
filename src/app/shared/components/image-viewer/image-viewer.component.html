@@ -1,0 +1,7 @@
+<div class="image-viewer" *ngIf="active">
+  <div class="image-viewer__controls">
+    <a class="close delete is-large" (click)="onCloseModal()"></a>
+  </div>
+  <img [src]="imageSrc" alt="" class="image-viewer__image">
+  <div class="image-viewer__caption" *ngIf="imageCaption"></div>
+</div>

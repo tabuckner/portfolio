@@ -1,0 +1,28 @@
+.project-item {
+
+  &__image {
+    cursor: pointer;
+  }
+
+  &__summary {
+    margin-bottom: 1.5rem;
+  }
+
+  &__stack {
+    display: flex;
+    flex-wrap: wrap;
+
+    .tag {
+      margin-right: .5rem;
+      margin-bottom: .5rem;
+    }
+  }
+
+  &__links {
+    .card-footer-item {
+      img {
+        height: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.container {
+  &.container--contact {
+    max-width: 600px;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+    margin: auto;
+    margin-top: 5rem;
+  }
+}
