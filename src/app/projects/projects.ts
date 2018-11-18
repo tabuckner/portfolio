@@ -3,7 +3,8 @@ import { Project } from './project.model';
 export const PORTFOLIO_PROJECTS: Project[] = [
   {
     name: 'Time-Tracker',
-    description: 'A simple time tracking app, w/ anonymous login--built in two lunch-breaks.',
+    description: 'A simple time tracking app, w/ anonymous login--built in two lunch-breaks.'
+    + ' Can be used to track anything from work schedules to time spent in the bathroom at work!',
     repoUrl: 'https://github.com/tabuckner/time-tracker',
     stack: [
       'Angular 6',
@@ -18,7 +19,8 @@ export const PORTFOLIO_PROJECTS: Project[] = [
   },
   {
     name: 'Jira-To-Sheets',
-    description: 'Small NPM Package to handle a very specific need to pull data and upload to google sheets.',
+    description: 'Small NPM Package to handle a very specific need to pull data and upload to google sheets.'
+    + ' Stores encrypted credentials on the user\'s machine (if they choose to risk that) and reports on Jira data.',
     repoUrl: 'https://github.com/tabuckner/jira-to-sheets',
     stack: [
       'Node',

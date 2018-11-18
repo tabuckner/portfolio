@@ -1,4 +1,9 @@
 .project-item {
+
+  &__image {
+    cursor: pointer;
+  }
+
   &__summary {
     margin-bottom: 1.5rem;
   }
