@@ -13,7 +13,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       'Jasmine',
       'Karma'
     ],
-    image: 'https://bulma.io/images/placeholders/1280x960.png',
+    image: 'assets/time-tracker.png',
     demoUrl: 'https://tabuckner.github.io/time-tracker/'
   },
   {
@@ -28,7 +28,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       'Google-Auth API',
       'Jira REST API'
     ],
-    image: 'https://bulma.io/images/placeholders/1280x960.png',
+    image: 'assets/jira-to-sheets.png',
     npmUrl: 'https://www.npmjs.com/package/jira-to-sheets'
   },
   {
@@ -40,7 +40,8 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       'Heroku',
       'Twitter API',
     ],
-    image: 'https://bulma.io/images/placeholders/1280x960.png',
+    image: 'assets/twitter-bot.png',
+    demoUrl: 'https://twitter.com/HillBillyNums'
   },
   {
     name: 'Workout Tracker REST API',
@@ -53,10 +54,10 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       'Docker',
       'bcrypt.js'
     ],
-    image: 'https://bulma.io/images/placeholders/1280x960.png',
+    image: 'assets/workout-tracker-api.png',
   },
   {
-    name: 'WorkoutTrackerApp',
+    name: 'Workout Tracker App',
     description: 'Angular 6/Angular Material web app to track a users workouts. Users can enter in their preferred excersizes, '
     + 'create routines based around those exercises--complete with goal targets, and track their routine completion progress. '
     + 'Includes a rest timer and automatic JWT token refreshing via a \'sliding session\'.',
@@ -66,6 +67,6 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       'Angular Material',
       'RxJS',
     ],
-    image: 'https://bulma.io/images/placeholders/1280x960.png',
+    image: 'assets/workout-tracker-app.gif',
   },
 ];
