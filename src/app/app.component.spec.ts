@@ -2,12 +2,14 @@ import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { RouterTestingModule } from '@angular/router/testing';
 import { LayoutModule } from './layout/layout.module';
+import { ImageViewerModule } from './shared/components/image-viewer/image-viewer.module';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
         RouterTestingModule,
         LayoutModule,
+        ImageViewerModule
       ],
       declarations: [
         AppComponent,

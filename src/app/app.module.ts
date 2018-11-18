@@ -14,6 +14,7 @@ import { ContactModule } from './contact/contact.module';
 import { RouterModule } from '@angular/router';
 import { LayoutModule } from './layout/layout.module';
 import { NavItemsService } from './shared/nav-items.service';
+import { ImageViewerModule } from './shared/components/image-viewer/image-viewer.module';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { NavItemsService } from './shared/nav-items.service';
     AboutModule,
     ProjectsModule,
     ContactModule,
+    ImageViewerModule
   ],
   providers: [NavItemsService],
   bootstrap: [AppComponent],
