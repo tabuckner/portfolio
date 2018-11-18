@@ -11,8 +11,16 @@
       <div class="tag has-background-grey has-text-white" *ngFor="let tech of project.stack">{{ tech }}</div>
     </div>
   </div>
-  <div class="project-item__lints card-footer">
-    <div class="card-footer-item">Github</div>
-    <div class="card-footer-item">Live Demo</div>
+  <div class="project-item__links card-footer">
+    <div class="card-footer-item">
+      <a [href]="project.repoUrl" target="_blank">
+        <img src="assets/GitHub-Logo.png" alt="github logo">
+      </a>
+    </div>
+    <div class="card-footer-item">
+      <button [disabled]="!project.demoUrl" class="button is-primary" (click)="demoAnchor.click();">Demo</button>
+      <!-- I know... https://github.com/jgthms/bulma/issues/276#issuecomment-325207050 -->
+      <a #demoAnchor target="_blank" href="project.demoUrl" class="is-hidden"></a>
+    </div>
   </div>
 </div>
