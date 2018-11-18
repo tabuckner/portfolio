@@ -18,7 +18,12 @@
       </a>
     </div>
     <div class="card-footer-item">
-      <button [disabled]="!project.demoUrl" class="button is-primary" (click)="demoAnchor.click();">Demo</button>
+      <button
+        [disabled]="!project.demoUrl"
+        class="button is-primary"
+        [ngClass]="{'tooltip is-tooltip-dark': !project.demoUrl}"
+        (click)="demoAnchor.click();"
+        [attr.data-tooltip]="!project.demoUrl ? 'Coming Soon!' : ''">Demo</button>
       <!-- I know... https://github.com/jgthms/bulma/issues/276#issuecomment-325207050 -->
       <a #demoAnchor target="_blank" href="project.demoUrl" class="is-hidden"></a>
     </div>
