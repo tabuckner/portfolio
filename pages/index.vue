@@ -2,6 +2,7 @@
   <v-layout column justify-center align-center>
     <v-flex xs12 sm8 md6>
       <div class="text-xs-center">
+        <my-component-component />
         <logo-component />
         <vuetify-logo-component />
       </div>
@@ -61,13 +62,15 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import LogoComponent from '~/components/Logo.vue';
-import VuetifyLogoComponent from '~/components/VuetifyLogo.vue';
+import LogoComponent from '~/components/Logo/Logo.vue';
+import VuetifyLogoComponent from '~/components/VuetifyLogo/VuetifyLogo.vue';
+import MyComponentComponent from '~/components/MyComponent/MyComponent.vue';
 
 @Component({
   components: {
     LogoComponent,
-    VuetifyLogoComponent
+    VuetifyLogoComponent,
+    MyComponentComponent
   }
 })
 export default class IndexPage extends Vue {}
