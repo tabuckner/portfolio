@@ -2,8 +2,8 @@
   <v-layout column justify-center align-center>
     <v-flex xs12 sm8 md6>
       <div class="text-xs-center">
-        <logo />
-        <vuetify-logo />
+        <logo-component />
+        <vuetify-logo-component />
       </div>
       <v-card>
         <v-card-title class="headline"
@@ -39,7 +39,9 @@
             more exciting features in the future.
           </p>
           <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
+            <em>
+              <small>&mdash; John Leider</small>
+            </em>
           </div>
           <hr class="my-3" />
           <a href="https://nuxtjs.org/" target="_blank">Nuxt Documentation</a>
@@ -57,14 +59,16 @@
   </v-layout>
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+import LogoComponent from '~/components/Logo.vue';
+import VuetifyLogoComponent from '~/components/VuetifyLogo.vue';
 
-export default {
+@Component({
   components: {
-    Logo,
-    VuetifyLogo
+    LogoComponent,
+    VuetifyLogoComponent
   }
-}
+})
+export default class IndexPage extends Vue {}
 </script>

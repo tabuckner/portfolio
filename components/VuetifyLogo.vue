@@ -19,3 +19,10 @@
   }
 }
 </style>
+
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+
+@Component({})
+export default class VuetifyLogoComponent extends Vue {}
+</script>
