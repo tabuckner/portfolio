@@ -42,7 +42,8 @@
       </v-btn>
     </v-toolbar>
     <v-content>
-      <v-container>
+      <v-container fill-height>
+        <!-- <v-container> -->
         <nuxt />
       </v-container>
     </v-content>

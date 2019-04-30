@@ -1,7 +1,9 @@
 {
   "name": "portfolio",
+  "siteName": "Taylor Buckner :: Portfolio",
   "version": "1.0.0",
   "description": "Personal Portfolio site created with NuxtJS",
+  "siteDescription": "Taylor Buckner is a Front End focused Engineer in Austin, TX who is passionate about beautiful and intuitive Web Experiences.",
   "author": "Taylor Buckner",
   "private": true,
   "scripts": {
