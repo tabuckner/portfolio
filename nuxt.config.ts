@@ -1,6 +1,8 @@
 import VuetifyLoaderPlugin from 'vuetify-loader/lib/plugin'
 import * as pkg from './package.json'
 
+const GA_ID = process.env.GA_ID || 'UA-138255585-2';
+
 export default {
   mode: 'universal',
 
@@ -45,7 +47,8 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    ['@nuxtjs/google-analytics', { id: GA_ID }]
   ],
   /*
    ** Axios module configuration
