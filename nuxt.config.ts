@@ -5,6 +5,9 @@ const GA_ID = process.env.GA_ID || 'UA-138255585-2';
 
 export default {
   mode: 'universal',
+  router: {
+    base: '/'
+  },
 
   /*
    ** Headers of the page

@@ -15,7 +15,7 @@
     "precommit": "npm run lint",
     "test": "jest",
     "gc": "yarn hygen new component",
-    "deploy": "yarn generate && yarn gh-pages -d dist --remote portfolio --branch master"
+    "deploy": "yarn generate && yarn gh-pages -d dist --remote portfolio --branch master  --dotfiles=true"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
